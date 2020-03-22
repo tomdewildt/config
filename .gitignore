@@ -18,3 +18,7 @@
 !.github/renovate.json
 !.github/stale.yml
 !.gitconfig
+
+### SSH ###
+!.ssh
+!.ssh/config
