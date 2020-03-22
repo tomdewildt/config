@@ -37,6 +37,9 @@
 ### Nautilus ###
 !.hidden
 
+### Python ###
+!.pylintrc
+
 ### Regolith ###
 !.config
 !.config/regolith
