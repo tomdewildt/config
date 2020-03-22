@@ -19,6 +19,17 @@
 !.github/stale.yml
 !.gitconfig
 
+### Regolith ###
+!.config
+!.config/regolith
+!.config/regolith/i3
+!.config/regolith/compton
+!.config/regolith/i3xrocks
+!.config/regolith/i3/config
+!.config/regolith/compton/config
+!.config/regolith/i3xrocks/config
+!.Xresources-regolith
+
 ### SSH ###
 !.ssh
 !.ssh/config
