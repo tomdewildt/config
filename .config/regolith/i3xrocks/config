@@ -1,0 +1,52 @@
+# Global
+command=/usr/share/i3xrocks/$BLOCK_NAME
+separator_block_width=35
+markup=pango
+color=xresource:i3xrocks.value.color
+label_color=xresource:i3xrocks.label.color
+
+# Shortcuts
+[info]
+full_text=xresource:i3xrocks.label.help
+command=i3-msg -q exec /usr/bin/remontoire-toggle
+
+# VPN
+#[nm-vpn]
+#interval=5
+
+# Wifi
+#[wifi2]
+#instance=wlp3s0 
+#interval=5
+
+# Network
+[nettraffic]
+interval=10
+
+# Keyboard
+#[keyboard_layout]
+#interval=persist
+
+# Memory
+[memory]
+interval=10
+
+# CPU
+[cpu_usage]
+interval=5
+min_width=100%
+
+# Battery
+[battery3]
+interval=30
+instance=BAT0
+
+# Notifications
+[rofication]
+command=/usr/share/i3xrocks/rofication-statusi3blocks.py
+interval=10
+
+# Date & Time
+[time2]
+interval=10
+
