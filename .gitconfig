@@ -1,0 +1,17 @@
+[user]
+	name = tomdewildt
+	email = t.l.dewildt@gmail.com
+[push]
+    default = simple
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    fe = fetch
+    br = branch
+    pl = pull
+    df = diff
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+    type = cat-file -t
+    dump = cat-file -p
+    ls = log --oneline -n 20 --graph

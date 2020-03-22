@@ -17,3 +17,4 @@
 !.github/PULL_REQUEST_TEMPLATE.md
 !.github/renovate.json
 !.github/stale.yml
+!.gitconfig
