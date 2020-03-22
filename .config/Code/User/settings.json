@@ -1,0 +1,70 @@
+{
+    // Breadcrumbs
+    "breadcrumbs.enabled": true,
+    // Clojure
+    "clojure.format.enable": true,
+    "calva.fmt.formatAsYouType": true,
+    // Editor
+    "editor.codeLens": false,
+    "editor.formatOnSave": true,
+    "editor.detectIndentation": true,
+    "editor.suggestSelection": "first",
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    },
+    // Emmet
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    // Explorer
+    "explorer.compactFolders": false,
+    "explorer.openEditors.visible": 0,
+    // Files
+    "files.exclude": {
+        "**/node_modules": true,
+        "**/__pycache__": true,
+        "**/.DS_Store": true,
+        "**/*.pyc": true,
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true
+    },
+    "files.watcherExclude": {
+        "**/.git/subtree-cache/**": true,
+        "**/.git/objects/**": true,
+        "**/node_modules/**": true
+    },
+    "search.exclude": {
+        "**/bower_components": true,
+        "**/*.code-search": true,
+        "**/node_modules": true,
+        "**/.DS_Store": true,
+        "**/.git": true
+    },
+    // Git
+    "git.autofetch": true,
+    "git.enableSmartCommit": true,
+    // Go
+    "go.useLanguageServer": true,
+    // Javascript
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    // Python
+    "python.linting.lintOnSave": true,
+    "python.linting.pylintEnabled": true,
+    "python.formatting.provider": "black",
+    "python.autoComplete.addBrackets": true,
+    "python.jediEnabled": false,
+    "python.venvFolders": [
+        "venv",
+        "env"
+    ],
+    // Visual Studio Intellicode
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    // Window
+    "window.zoomLevel": 0,
+    "window.menuBarVisibility": "toggle",
+    // Workbench
+    "workbench.settings.editor": "json",
+    "workbench.colorTheme": "Nord",
+}

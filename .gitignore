@@ -11,6 +11,12 @@
 !.config/gtk-3.0
 !.config/gtk-3.0/bookmarks
 
+### Code ###
+!.config
+!.config/Code
+!.config/Code/User
+!.config/Code/User/settings.json
+
 ### Git ###
 !.github/
 !.github/ISSUE_TEMPLATE/
