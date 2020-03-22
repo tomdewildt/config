@@ -1,0 +1,16 @@
+[TYPECHECK]
+ignored-modules=cv2, numpy, tensorflow
+
+[MESSAGES CONTROL]
+disable=too-few-public-methods,
+        redefined-outer-name,
+        redefined-builtin,
+        missing-docstring,
+        locally-disabled,
+        duplicate-code,
+        invalid-name,
+        no-self-use,
+
+[report]
+exclude_lines =
+    if __name__ == .__main__.:
