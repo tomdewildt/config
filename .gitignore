@@ -6,6 +6,11 @@
 !.bash_aliases
 !.bash_functions
 
+### Bookmarks ###
+!.config
+!.config/gtk-3.0
+!.config/gtk-3.0/bookmarks
+
 ### Git ###
 !.github/
 !.github/ISSUE_TEMPLATE/
@@ -18,6 +23,9 @@
 !.github/renovate.json
 !.github/stale.yml
 !.gitconfig
+
+### Nautilus ###
+!.hidden
 
 ### Regolith ###
 !.config
