@@ -1,5 +1,11 @@
 *
 
+### Bash ###
+!.bashrc
+!.profile
+!.bash_aliases
+!.bash_functions
+
 ### Git ###
 !.github/
 !.github/ISSUE_TEMPLATE/
