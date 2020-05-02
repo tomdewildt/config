@@ -1,0 +1,6 @@
+# Global properties
+command=/usr/share/i3xrocks/$BLOCK_NAME
+separator_block_width=35
+markup=pango
+color=xresource:i3xrocks.value.color
+label_color=xresource:i3xrocks.label.color
