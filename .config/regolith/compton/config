@@ -14,20 +14,8 @@ glx-copy-from-front = false;
 glx-no-rebind-pixmap = true;
 use-damage = false;
 
-# GLX buffer swap method we assume.
-glx-swap-method = "buffer-age";
-
 # Enabled client-side shadows on windows.
 shadow = true;
-
-# Don't draw shadows on DND windows.
-no-dnd-shadow = true;
-
-# Avoid drawing shadows on dock/panel windows.
-no-dock-shadow = false;
-
-# Zero the part of the shadow's mask behind the window. Fix some weirdness with ARGB windows.
-clear-shadow = true;
 
 # The blur radius for shadows. (default 12)
 shadow-radius = 7;
@@ -69,6 +57,7 @@ shadow-exclude = [
     "class_g ?= 'Cairo-dock'",
     "_GTK_FRAME_EXTENTS@:c"
 ];
+
 # Avoid drawing shadow on all shaped windows (see also: --detect-rounded-corners)
 shadow-ignore-shaped = false;
 
@@ -77,7 +66,6 @@ inactive-opacity = 1;
 active-opacity = 1;
 frame-opacity = 1;
 inactive-opacity-override = false;
-alpha-step = 0.06;
 
 # Dim inactive windows. (0.0 - 1.0)
 inactive-dim = 0.03;
