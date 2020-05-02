@@ -10,12 +10,14 @@
     "editor.detectIndentation": true,
     "editor.suggestSelection": "first",
     "editor.codeActionsOnSave": {
-        "source.fixAll": true
+        "source.fixAll.eslint": true
     },
     // Emmet
     "emmet.includeLanguages": {
         "javascript": "javascriptreact"
     },
+    // ESlint
+    "eslint.format.enable": true,
     // Explorer
     "explorer.compactFolders": false,
     "explorer.openEditors.visible": 0,
@@ -48,6 +50,7 @@
     // Go
     "go.useLanguageServer": true,
     // Javascript
+    "javascript.format.enable": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
     // Python
     "python.linting.lintOnSave": true,
