@@ -1,0 +1,4 @@
+# Battery
+[battery]
+interval=30
+instance=BAT0
