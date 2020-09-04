@@ -6,7 +6,7 @@
 
  ;; Aliases
  ;; :aliases {
- ;;  :deps {:extra-deps {org.clojure/tools.deps.alpha {:mvn/version "0.9.763"}}}
+ ;;  :deps {:extra-deps {org.clojure/tools.deps.alpha {:mvn/version "0.9.782"}}}
  ;;  :test {:extra-paths ["test"]}
  ;; }
 
