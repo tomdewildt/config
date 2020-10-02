@@ -70,4 +70,5 @@
     // Workbench
     "workbench.settings.editor": "json",
     "workbench.colorTheme": "Nord",
+    "workbench.startupEditor": "none",
 }
