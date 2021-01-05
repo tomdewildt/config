@@ -1,7 +1,18 @@
+#################################
+#
+# Backend
+#
+#################################
+
 # Backend to use: "xrender" or "glx".
 backend = "glx";
 
+#################################
+#
 # GLX backend
+#
+#################################
+
 glx-no-stencil = true;
 
 # Copy unmodified regions from front buffer instead of redrawing them all.
@@ -12,7 +23,16 @@ glx-copy-from-front = false;
 
 # Avoid rebinding pixmap on window damage.
 glx-no-rebind-pixmap = true;
-use-damage = false;
+use-damage = true;
+
+# Fix bad synchronization between X Render and GLX.
+xrender-sync-fence = true;
+
+#################################
+#
+# Shadows
+#
+#################################
 
 # Enabled client-side shadows on windows.
 shadow = true;
@@ -29,7 +49,7 @@ shadow-offset-y = -5;
 # The translucency for shadows. (default .75)
 shadow-opacity = 0.8;
 
-# Set if you want different colour shadows
+# Set if you want different colour shadows.
 # shadow-red = 0.0;
 # shadow-green = 0.0;
 # shadow-blue = 0.0;
@@ -58,10 +78,15 @@ shadow-exclude = [
     "_GTK_FRAME_EXTENTS@:c"
 ];
 
-# Avoid drawing shadow on all shaped windows (see also: --detect-rounded-corners)
+# Avoid drawing shadow on all shaped windows. (see also: --detect-rounded-corners)
 shadow-ignore-shaped = false;
 
+#################################
+#
 # Opacity
+#
+#################################
+
 inactive-opacity = 1;
 active-opacity = 1;
 frame-opacity = 1;
@@ -86,6 +111,12 @@ blur-background-exclude = [
     "window_type = 'desktop'"
 ];
 
+#################################
+#
+# Fading
+#
+#################################
+
 # Fade windows during opacity changes.
 fading = true;
 
@@ -98,11 +129,17 @@ fade-in-step = 0.03;
 # Opacity change between steps while fading out. (default 0.03).
 fade-out-step = 0.03;
 
-# Fade windows in/out when opening/closing
+# Fade windows in/out when opening/closing.
 # no-fading-openclose = true;
 
 # Specify a list of conditions of windows that should not be faded.
 fade-exclude = [ ];
+
+#################################
+#
+# Other
+#
+#################################
 
 # Try to detect WM windows and mark them as active.
 mark-wmwin-focused = true;
@@ -117,15 +154,13 @@ use-ewmh-active-win = true;
 detect-rounded-corners = true;
 
 # Detect _NET_WM_OPACITY on client windows, useful for window managers not passing _NET_WM_OPACITY of client windows to frame windows.
-# This prevents opacity being ignored for some apps.
-# For example without this enabled my xfce4-notifyd is 100% opacity no matter what.
 detect-client-opacity = true;
 
 # Specify refresh rate of the screen.
 refresh-rate = 0;
 
 # Set VSync method.
-vsync = "opengl-swc";
+vsync = true;
 
 # Enable DBE painting mode, intended to use with VSync to (hopefully) eliminate tearing.
 dbe = false;
@@ -141,14 +176,18 @@ focus-exclude = [ ];
 
 # Use WM_TRANSIENT_FOR to group windows, and consider windows in the same group focused at the same time.
 detect-transient = true;
-
 # Use WM_CLIENT_LEADER to group windows, and consider windows in the same group focused at the same time.
 detect-client-leader = true;
 
 # Prevent shadows from drawing across displays.
 xinerama-shadow-crop = true;
 
+#################################
+#
 # Window type settings
+#
+#################################
+
 wintypes:
 {
     tooltip =
