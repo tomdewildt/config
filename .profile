@@ -6,9 +6,10 @@ paths=(
   "$HOME/go/bin"
   "$HOME/.local/bin"
   "$HOME/.cargo/bin"
+  "/opt/android/cmdline-tools/latest/bin"
   "/opt/android/emulator"
-  "/opt/android/tools/bin"
   "/opt/android/platform-tools"
+  "/opt/android/tools"
   "/opt/flutter/bin"
   "/opt/go/bin"
 )
