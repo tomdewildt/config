@@ -74,4 +74,10 @@
     "workbench.settings.editor": "json",
     "workbench.colorTheme": "Nord",
     "workbench.startupEditor": "none",
+    // Yaml
+    "yaml.customTags": [
+        "!env scalar",
+        "!or sequence",
+        "!merge sequence"
+    ]
 }
