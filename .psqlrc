@@ -1,0 +1,14 @@
+-- Enable timing
+\timing on
+
+-- Enable autocomplete
+\set COMP_KEYWORD_CASE upper
+
+-- Enable expand output
+\x auto
+
+-- Enable verbose errors
+\set VERBOSITY verbose
+
+-- Customize prompt
+\set PROMPT1 '%n@%M/%/%R%#%x '
