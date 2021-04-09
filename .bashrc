@@ -58,9 +58,11 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
-export ANDROID_SDK_ROOT=/opt/android
 export ANDROID_HOME=/opt/android
-export PYTHONPATH=./src:./test
-export GOPATH=$HOME/go
+export ANDROID_SDK_ROOT=/opt/android
+export DOTNET_CLI_TELEMETRY_OPTOUT=1
 export EDITOR=nano
+export GOPATH=$HOME/go
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64/
+export LD_LIBRARY_PATH=/usr/lib/cuda/include:/usr/lib/cuda/lib64
+export PYTHONPATH=./src:./test
