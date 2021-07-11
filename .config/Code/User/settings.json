@@ -48,7 +48,9 @@
     "git.autofetch": true,
     "git.enableSmartCommit": true,
     // Go
-    "go.useLanguageServer": true,
+    "go.docsTool": "godoc",
+    "go.formatTool": "default",
+    "go.lintTool": "golint",
     // Javascript
     "javascript.format.enable": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
