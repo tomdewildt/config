@@ -83,7 +83,8 @@
     // Yaml
     "yaml.customTags": [
         "!env scalar",
+        "!format sequence",
+        "!include scalar",
         "!or sequence",
-        "!merge sequence"
     ]
 }
