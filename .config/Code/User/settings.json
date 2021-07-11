@@ -55,7 +55,7 @@
     "javascript.format.enable": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
     // Python
-    "python.languageServer": "Microsoft",
+    "python.languageServer": "Pylance",
     "python.linting.lintOnSave": true,
     "python.linting.pylintEnabled": true,
     "python.formatting.provider": "black",
