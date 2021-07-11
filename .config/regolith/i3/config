@@ -2,6 +2,7 @@
 # Key Mappings
 ###############################################################################
 
+# Meta Key - Alt key is Mod1, and Windows key is Mod4
 set_from_resource $mod  i3-wm.mod Mod4
 set_from_resource $alt  i3-wm.alt Mod1
 
@@ -311,6 +312,10 @@ floating_modifier $mod
 set_from_resource $i3-wm.hide.edge.borders i3-wm.hide.edge.borders smart
 hide_edge_borders $i3-wm.hide.edge.borders
 
+# Set the default layout mode
+set_from_resource $i3-wm.workspace.layout i3-wm.workspace.layout default
+workspace_layout $i3-wm.workspace.layout
+
 ###############################################################################
 # Session Management
 ###############################################################################
@@ -384,6 +389,11 @@ bindsym $mod+$i3-wm.binding.wifi exec $i3-wm.program.wifi
 set_from_resource $i3-wm.binding.bluetooth i3-wm.binding.bluetooth b
 set_from_resource $i3-wm.program.bluetooth i3-wm.program.bluetooth gnome-control-center bluetooth
 bindsym $mod+$i3-wm.binding.bluetooth exec $i3-wm.program.bluetooth
+
+## Modify // Sound Settings // <> s ##
+set_from_resource $i3-wm.binding.sound i3-wm.binding.sound s
+set_from_resource $i3-wm.program.sound i3-wm.program.sound gnome-control-center sound
+bindsym $mod+$i3-wm.binding.sound exec $i3-wm.program.sound
 
 ## Launch // File Browser // <><Shift> n ##
 set_from_resource $i3-wm.binding.files i3-wm.binding.files Shift+n
@@ -522,7 +532,6 @@ set_from_resource $urgent.color.background i3-wm.client.urgent.color.background 
 set_from_resource $urgent.color.text i3-wm.client.urgent.color.text "#fdf6e3"
 set_from_resource $urgent.color.indicator i3-wm.client.urgent.color.indicator "#002b36"
 set_from_resource $urgent.color.child_border i3-wm.client.urgent.color.child_border
-
 
 # Window border color
 # CLASS                 BORDER                             BACKGROUND                         TEXT                               INDICATOR                          CHILD BORDER
