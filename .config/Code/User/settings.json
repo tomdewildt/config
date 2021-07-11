@@ -65,6 +65,7 @@
         "env"
     ],
     // Telemetry
+    "redhat.telemetry.enabled": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
     // Visual Studio Intellicode
