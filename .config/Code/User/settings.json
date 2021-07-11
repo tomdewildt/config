@@ -68,6 +68,9 @@
     "redhat.telemetry.enabled": false,
     "telemetry.enableCrashReporter": false,
     "telemetry.enableTelemetry": false,
+    // Terminal
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.tabs.enabled": true,
     // Visual Studio Intellicode
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     // Window
