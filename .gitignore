@@ -43,6 +43,11 @@
 ### Python ###
 !.pylintrc
 
+### R ###
+!.config
+!.config/rstudio
+!.config/rstudio/rstudio-prefs.json
+
 ### Regolith ###
 !.config
 !.config/regolith
