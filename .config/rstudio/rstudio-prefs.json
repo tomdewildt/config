@@ -1,0 +1,13 @@
+{
+    "jobs_tab_visibility": "shown",
+    "default_project_location": "~/Projects",
+    "show_hidden_files": true,
+    "initial_working_directory": "~",
+    "posix_terminal_shell": "bash",
+    "editor_theme": "Nord",
+    "rainbow_parentheses": true,
+    "highlight_selected_line": true,
+    "scroll_past_end_of_document": true,
+    "highlight_r_function_calls": true,
+    "shiny_viewer_type": "pane"
+}
