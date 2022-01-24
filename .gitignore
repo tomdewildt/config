@@ -55,6 +55,10 @@
 !.config/regolith/i3xrocks/conf.d/*
 !.Xresources-regolith
 
+### Rust ###
+!.rustup
+!.rustup/settings.toml
+
 ### SSH ###
 !.ssh
 !.ssh/config
