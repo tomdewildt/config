@@ -55,6 +55,7 @@
     "javascript.format.enable": false,
     "javascript.updateImportsOnFileMove.enabled": "always",
     // Python
+    "python.analysis.completeFunctionParens": true,
     "python.languageServer": "Pylance",
     "python.linting.lintOnSave": true,
     "python.linting.pylintEnabled": true,
@@ -66,8 +67,7 @@
     ],
     // Telemetry
     "redhat.telemetry.enabled": false,
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
     // Terminal
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.tabs.enabled": true,
