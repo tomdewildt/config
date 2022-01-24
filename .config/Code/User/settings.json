@@ -67,8 +67,7 @@
     ],
     // Telemetry
     "redhat.telemetry.enabled": false,
-    "telemetry.enableCrashReporter": false,
-    "telemetry.enableTelemetry": false,
+    "telemetry.telemetryLevel": "off",
     // Terminal
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.tabs.enabled": true,
