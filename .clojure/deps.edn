@@ -2,7 +2,7 @@
  :paths ["src"]
 
  ;; External Dependencies
- ;; :deps {org.clojure/clojure {:mvn/version "1.10.3"}}
+ ;; :deps {org.clojure/clojure {:mvn/version "1.11.0"}}
 
  ;; Aliases
  ;; :aliases {
