@@ -71,10 +71,10 @@
     // Terminal
     "terminal.integrated.fontSize": 14,
     "terminal.integrated.tabs.enabled": true,
+    "terminal.integrated.enablePersistentSessions": false,
     // Visual Studio Intellicode
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     // Window
-    "window.zoomLevel": 0,
     "window.menuBarVisibility": "toggle",
     // Workbench
     "workbench.settings.editor": "json",
