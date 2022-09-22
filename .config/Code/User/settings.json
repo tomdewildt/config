@@ -4,6 +4,12 @@
     // Clojure
     "clojure.format.enable": true,
     "calva.fmt.formatAsYouType": true,
+    // CSpell
+    "cSpell.language": "en,nl",
+    "cSpell.userWords": [
+        "tomdewildt",
+        "uninstantiated"
+    ],
     // Editor
     "editor.codeLens": false,
     "editor.formatOnSave": true,
