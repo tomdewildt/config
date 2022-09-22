@@ -1,4 +1,5 @@
 bin
 go
+nltk_data
 R
 scikit_learn_data
