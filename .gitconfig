@@ -16,4 +16,4 @@
     dump = cat-file -p
     ls = log --oneline -n 20 --graph
 [credential]
-	helper = cache
+	helper = store
