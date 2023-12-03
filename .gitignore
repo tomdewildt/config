@@ -11,10 +11,6 @@
 !.config/gtk-3.0
 !.config/gtk-3.0/bookmarks
 
-### Clojure ###
-!.clojure/
-!.clojure/deps.edn
-
 ### Code ###
 !.config
 !.config/Code
@@ -47,18 +43,6 @@
 !.config
 !.config/rstudio
 !.config/rstudio/rstudio-prefs.json
-
-### Regolith ###
-!.config
-!.config/regolith
-!.config/regolith/i3
-!.config/regolith/compton
-!.config/regolith/i3xrocks
-!.config/regolith/i3/config
-!.config/regolith/compton/config
-!.config/regolith/i3xrocks/conf.d
-!.config/regolith/i3xrocks/conf.d/*
-!.Xresources-regolith
 
 ### Rust ###
 !.rustup
