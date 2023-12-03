@@ -39,10 +39,6 @@
 ### Python ###
 !.pylintrc
 
-### Rust ###
-!.rustup
-!.rustup/settings.toml
-
 ### SSH ###
 !.ssh
 !.ssh/config
