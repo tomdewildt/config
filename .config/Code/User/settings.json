@@ -1,97 +1,124 @@
 {
-    // Breadcrumbs
-    "breadcrumbs.enabled": true,
-    // Clojure
-    "clojure.format.enable": true,
-    "calva.fmt.formatAsYouType": true,
-    // CSpell
-    "cSpell.language": "en,nl",
-    "cSpell.userWords": [
-        "tomdewildt",
-        "uninstantiated"
-    ],
-    // Editor
-    "editor.codeLens": false,
+  // Breadcrumbs
+  "breadcrumbs.enabled": true,
+  // Copilot
+  "github.copilot.enable": {
+    "*": true
+  },
+  // CSpell
+  "cSpell.language": "en,nl",
+  "cSpell.userWords": [
+    "neople",
+    "tanstack",
+    "tomdewildt",
+    "uninstantiated",
+    "vectorize",
+    "vectorizer",
+    "weaviate"
+  ],
+  // Editor
+  "editor.codeLens": false,
+  "editor.formatOnSave": true,
+  "editor.detectIndentation": true,
+  "editor.suggestSelection": "first",
+  "editor.inlineSuggest.enabled": true,
+  // Emmet
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact"
+  },
+  // Explorer
+  "explorer.compactFolders": false,
+  "explorer.openEditors.visible": 0,
+  // Files
+  "files.exclude": {
+    "**/node_modules": true,
+    "**/__pycache__": true,
+    "**/.DS_Store": true,
+    "**/*.pyc": true,
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true
+  },
+  "files.watcherExclude": {
+    "**/.git/subtree-cache/**": true,
+    "**/.git/objects/**": true,
+    "**/node_modules/**": true
+  },
+  "search.exclude": {
+    "**/bower_components": true,
+    "**/*.code-search": true,
+    "**/node_modules": true,
+    "**/.DS_Store": true,
+    "**/.git": true
+  },
+  // Git
+  "git.autofetch": true,
+  "git.enableSmartCommit": true,
+  // Go
+  "go.formatTool": "default",
+  "go.lintTool": "golint",
+  // Javascript
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
-    "editor.detectIndentation": true,
-    "editor.suggestSelection": "first",
-    "editor.inlineSuggest.enabled": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
+        "source.fixAll": true,
+        "source.organizeImports": true
+    }
+  },
+  // Python
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+      "source.fixAll": true
     },
-    // Emmet
-    "emmet.includeLanguages": {
-        "javascript": "javascriptreact"
-    },
-    // ESlint
-    "eslint.format.enable": true,
-    // Explorer
-    "explorer.compactFolders": false,
-    "explorer.openEditors.visible": 0,
-    // Files
-    "files.exclude": {
-        "**/node_modules": true,
-        "**/__pycache__": true,
-        "**/.DS_Store": true,
-        "**/*.pyc": true,
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true
-    },
-    "files.watcherExclude": {
-        "**/.git/subtree-cache/**": true,
-        "**/.git/objects/**": true,
-        "**/node_modules/**": true
-    },
-    "search.exclude": {
-        "**/bower_components": true,
-        "**/*.code-search": true,
-        "**/node_modules": true,
-        "**/.DS_Store": true,
-        "**/.git": true
-    },
-    // Git
-    "git.autofetch": true,
-    "git.enableSmartCommit": true,
-    // Go
-    "go.docsTool": "godoc",
-    "go.formatTool": "default",
-    "go.lintTool": "golint",
-    // Javascript
-    "javascript.format.enable": false,
-    "javascript.updateImportsOnFileMove.enabled": "always",
-    // Python
-    "python.analysis.completeFunctionParens": true,
-    "python.languageServer": "Pylance",
-    "python.linting.lintOnSave": true,
-    "python.linting.pylintEnabled": true,
-    "python.formatting.provider": "black",
-    "python.autoComplete.addBrackets": true,
-    "python.venvFolders": [
-        "venv",
-        "env"
-    ],
-    // Telemetry
-    "redhat.telemetry.enabled": false,
-    "telemetry.telemetryLevel": "off",
-    // Terminal
-    "terminal.integrated.fontSize": 14,
-    "terminal.integrated.tabs.enabled": true,
-    "terminal.integrated.enablePersistentSessions": false,
-    // Visual Studio Intellicode
-    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
-    // Window
-    "window.menuBarVisibility": "toggle",
-    // Workbench
-    "workbench.settings.editor": "json",
-    "workbench.colorTheme": "Nord",
-    "workbench.startupEditor": "none",
-    // Yaml
-    "yaml.customTags": [
-        "!env scalar",
-        "!format sequence",
-        "!include scalar",
-        "!or sequence",
-    ]
+  },
+  "python.analysis.completeFunctionParens": true,
+  "python.languageServer": "Pylance",
+  "python.linting.lintOnSave": true,
+  "python.linting.pylintEnabled": true,
+  "python.formatting.provider": "black",
+  "python.venvFolders": [".env", ".venv", "env", "venv"],
+  // Telemetry
+  "redhat.telemetry.enabled": false,
+  "telemetry.telemetryLevel": "off",
+  // Typescript
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    }
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true,
+        "source.organizeImports": true
+    }
+  },
+  // Terminal
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.tabs.enabled": true,
+  "terminal.integrated.enablePersistentSessions": false,
+  // Visual Studio Intellicode
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  // Window
+  "window.menuBarVisibility": "toggle",
+  // Workbench
+  "workbench.colorTheme": "Nord",
+  "workbench.settings.editor": "json",
+  "workbench.startupEditor": "none",
+  // Yaml
+  "yaml.customTags": [
+    "!aws scalar",
+    "!env scalar",
+    "!format sequence",
+    "!include scalar",
+    "!or sequence"
+  ],
 }
