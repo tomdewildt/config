@@ -39,11 +39,6 @@
 ### Python ###
 !.pylintrc
 
-### R ###
-!.config
-!.config/rstudio
-!.config/rstudio/rstudio-prefs.json
-
 ### Rust ###
 !.rustup
 !.rustup/settings.toml
