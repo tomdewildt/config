@@ -63,8 +63,8 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll": true,
-        "source.organizeImports": true
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
     }
   },
   // Python
@@ -72,14 +72,11 @@
     "editor.defaultFormatter": "ms-python.black-formatter",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.fixAll": true
-    },
+      "source.fixAll": "explicit"
+    }
   },
   "python.analysis.completeFunctionParens": true,
   "python.languageServer": "Pylance",
-  "python.linting.lintOnSave": true,
-  "python.linting.pylintEnabled": true,
-  "python.formatting.provider": "black",
   "python.venvFolders": [".env", ".venv", "env", "venv"],
   // Telemetry
   "redhat.telemetry.enabled": false,
@@ -89,16 +86,16 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll": true,
-        "source.organizeImports": true
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
     }
   },
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll": true,
-        "source.organizeImports": true
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
     }
   },
   // Terminal
@@ -108,8 +105,6 @@
   // Visual Studio Intellicode
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   // Window
-  "window.menuBarVisibility": "toggle",
-  // Workbench
   "workbench.colorTheme": "Nord",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none",
@@ -120,5 +115,5 @@
     "!format sequence",
     "!include scalar",
     "!or sequence"
-  ],
+  ]
 }
