@@ -1,10 +1,6 @@
 #! /bin/bash
-alias sudo='sudo '
-
-if [ "$1" == true ]; then
+if [[ "$1" == true ]]; then
     alias ls='ls --color=auto --group-directories-first --classify'
-    alias dir='dir --color=auto'
-    alias vdir='vdir --color=auto'
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
