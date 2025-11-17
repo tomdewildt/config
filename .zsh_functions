@@ -1,0 +1,4 @@
+#! /bin/zsh
+preexec() {
+    export CMD=$1;
+}
