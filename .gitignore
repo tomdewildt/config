@@ -39,3 +39,9 @@
 ### SSH ###
 !.ssh
 !.ssh/config
+
+### Zsh ###
+!.zshrc
+!.zprofile
+!.zsh_aliases
+!.zsh_functions
