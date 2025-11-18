@@ -3,7 +3,9 @@
   "breadcrumbs.enabled": true,
   // Copilot
   "github.copilot.enable": {
-    "*": true
+    "*": true,
+    "markdown": true,
+    "plaintext": true,
   },
   // CSpell
   "cSpell.language": "en,nl",
@@ -63,42 +65,39 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll": true,
-        "source.organizeImports": true
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
     }
   },
   // Python
   "[python]": {
-    "editor.defaultFormatter": "ms-python.black-formatter",
+    "editor.defaultFormatter": "charliermarsh.ruff",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-      "source.fixAll": true
-    },
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
+    }
   },
+  "python.analysis.autoFormatStrings": true,
+  "python.analysis.autoImportCompletions": true,
   "python.analysis.completeFunctionParens": true,
+  "python.analysis.generateWithTypeAnnotation": true,
+  "python.analysis.inlayHints.functionReturnTypes": true,
+  "python.analysis.inlayHints.pytestParameters": true,
+  "python.analysis.inlayHints.variableTypes": true,
+  "python.analysis.typeCheckingMode": "standard",
   "python.languageServer": "Pylance",
-  "python.linting.lintOnSave": true,
-  "python.linting.pylintEnabled": true,
-  "python.formatting.provider": "black",
   "python.venvFolders": [".env", ".venv", "env", "venv"],
   // Telemetry
   "redhat.telemetry.enabled": false,
   "telemetry.telemetryLevel": "off",
   // Typescript
-  "[typescript]": {
+  "[typescript][typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
-        "source.fixAll": true,
-        "source.organizeImports": true
-    }
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode",
-    "editor.formatOnSave": true,
-    "editor.codeActionsOnSave": {
-        "source.fixAll": true,
-        "source.organizeImports": true
+      "source.fixAll": "explicit",
+      "source.organizeImports": "explicit"
     }
   },
   // Terminal
@@ -108,12 +107,11 @@
   // Visual Studio Intellicode
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   // Window
-  "window.menuBarVisibility": "toggle",
-  // Workbench
   "workbench.colorTheme": "Nord",
   "workbench.settings.editor": "json",
   "workbench.startupEditor": "none",
   // Yaml
+  "yaml.format.printWidth": 120,
   "yaml.customTags": [
     "!aws scalar",
     "!env scalar",
