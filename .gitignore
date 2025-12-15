@@ -36,6 +36,13 @@
 ### Postgres ###
 !.psqlrc
 
+### Regolith ###
+!.config
+!.config/regolith3
+!.config/regolith3/i3status-rust
+!.config/regolith3/i3status-rust/config.toml
+!.config/regolith3/Xresources
+
 ### SSH ###
 !.ssh
 !.ssh/config
