@@ -43,9 +43,15 @@
 !.config/regolith3/i3status-rust/config.toml
 !.config/regolith3/Xresources
 
+### Skhd ###
+!.skhdrc
+
 ### SSH ###
 !.ssh
 !.ssh/config
+
+### Yabai ###
+!.yabairc
 
 ### Zsh ###
 !.zshrc

@@ -1,0 +1,47 @@
+sudo yabai --load-sa
+
+yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
+
+yabai -m config mouse_follows_focus     off
+yabai -m config focus_follows_mouse     off
+yabai -m config window_origin_display   focused
+yabai -m config window_placement        second_child
+yabai -m config window_insertion_point  focused
+yabai -m config split_ratio             0.5
+
+yabai -m config layout                  bsp
+yabai -m config top_padding             6
+yabai -m config bottom_padding          8
+yabai -m config left_padding            8
+yabai -m config right_padding           8
+yabai -m config window_gap              8
+
+yabai -m space 1 --label 1
+yabai -m space 2 --label 2
+yabai -m space 3 --label 3
+yabai -m space 4 --label 4
+yabai -m space 5 --label 5
+yabai -m space 6 --label 6
+yabai -m space 7 --label 7
+yabai -m space 8 --label 8
+yabai -m space 9 --label 9
+yabai -m space 10 --label 10
+yabai -m space 11 --label 11
+yabai -m space 12 --label 12
+
+yabai -m rule --add app="^Finder$" title="(Co(py|nnect)|Move|Info|Pref)" manage=off
+
+yabai -m rule --add app="^Bitwarden$" manage=off
+yabai -m rule --add app="^Calculator$" manage=off
+yabai -m rule --add app="^Chess$" manage=off
+yabai -m rule --add app="^ColorSync Utility$" manage=off
+yabai -m rule --add app="^Digital Color Meter$" manage=off
+yabai -m rule --add app="^DisplayLink Manager$" manage=off
+yabai -m rule --add app="^EVO$" manage=off
+yabai -m rule --add app="^Google Drive$" manage=off
+yabai -m rule --add app="^Passwords$" manage=off
+yabai -m rule --add app="^Photo Booth$" manage=off
+yabai -m rule --add app="^Siri$" manage=off
+yabai -m rule --add app="^Stickies$" manage=off
+yabai -m rule --add app="^System Settings$" manage=off
+yabai -m rule --add app="^VoiceOver Utility$" manage=off
