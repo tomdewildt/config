@@ -1,0 +1,63 @@
+# Focus left (ctrl + j)
+ctrl - j : yabai -m window --focus west || yabai -m display --focus west
+
+# Focus down (ctrl + k)
+ctrl - k : yabai -m window --focus stack.next || yabai -m window --focus south
+
+# Focus up (ctrl + l)
+ctrl - l : yabai -m window --focus stack.prev || yabai -m window --focus north
+
+# Focus right (ctrl + ;)
+ctrl - 0x29 : yabai -m window --focus east || yabai -m display --focus east
+
+# Move to left (shift + ctrl + j)
+shift + ctrl - j : yabai -m window --warp west  || yabai -m window --display west
+
+# Move to down (shift + ctrl + k)
+shift + ctrl - k : yabai -m window --warp south
+
+# Move to up (shift + ctrl + l)
+shift + ctrl - l : yabai -m window --warp north
+
+# Move to right (shift + ctrl + ;)
+shift + ctrl - 0x29 : yabai -m window --warp east  || yabai -m window --display east
+
+# Focus spaces (ctrl + <number>)
+ctrl - 1 : yabai -m space --focus 1 || yabai -m space --focus recent
+ctrl - 2 : yabai -m space --focus 2 || yabai -m space --focus recent
+ctrl - 3 : yabai -m space --focus 3 || yabai -m space --focus recent
+ctrl - 4 : yabai -m space --focus 4 || yabai -m space --focus recent
+ctrl - 5 : yabai -m space --focus 5 || yabai -m space --focus recent
+ctrl - 6 : yabai -m space --focus 6 || yabai -m space --focus recent
+ctrl - 7 : yabai -m space --focus 7 || yabai -m space --focus recent
+ctrl - 8 : yabai -m space --focus 8 || yabai -m space --focus recent
+ctrl - 9 : yabai -m space --focus 9 || yabai -m space --focus recent
+ctrl - 0 : yabai -m space --focus 10 || yabai -m space --focus recent
+
+# Send window to space (shift + ctrl + <number>)
+shift + ctrl - 1 : yabai -m window --space 1
+shift + ctrl - 2 : yabai -m window --space 2
+shift + ctrl - 3 : yabai -m window --space 3
+shift + ctrl - 4 : yabai -m window --space 4
+shift + ctrl - 5 : yabai -m window --space 5
+shift + ctrl - 6 : yabai -m window --space 6
+shift + ctrl - 7 : yabai -m window --space 7
+shift + ctrl - 8 : yabai -m window --space 8
+shift + ctrl - 9 : yabai -m window --space 9
+shift + ctrl - 0 : yabai -m window --space 10
+
+# Toggle split mode (ctrl + h/v)
+ctrl - h : yabai -m window --toggle split
+ctrl - v : yabai -m window --toggle split
+
+# Resize window to left (alt + ctrl + shift + j)
+alt + ctrl + shift - j : yabai -m window --resize left:-100:0; yabai -m window --resize right:-100:0
+
+# Resize window to bottom (alt + ctrl + shift + ;)
+alt + ctrl + shift - k : yabai -m window --resize bottom:0:100; yabai -m window --resize top:0:100
+
+# Resize window to top (alt + ctrl + shift + l)
+alt + ctrl + shift - l : yabai -m window --resize top:0:-100; yabai -m window --resize bottom:0:-100
+
+# Resize window to right (alt + ctrl + shift + ;)
+alt + ctrl + shift - 0x29 : yabai -m window --resize right:100:0; yabai -m window --resize left:100:0
