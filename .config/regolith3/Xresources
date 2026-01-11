@@ -1,5 +1,6 @@
-# Bar
+regolith.wallpaper.file: /home/tomdewildt/Pictures/Backgrounds/nord.png
+
 wm.bar.status_config: /home/tomdewildt/.config/regolith3/i3status-rust/config.toml
 
-# Wallpaper
-regolith.wallpaper.file: /home/tomdewildt/Pictures/Backgrounds/nord.png
+wm.lidclose.action.battery: SLEEP
+wm.lidclose.action.power: SLEEP
