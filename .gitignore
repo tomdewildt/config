@@ -33,6 +33,11 @@
 ### Nautilus ###
 !.hidden
 
+### Petr ###
+!.config
+!.config/pter
+!.config/pter/pter.conf
+
 ### Postgres ###
 !.psqlrc
 
