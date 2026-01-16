@@ -11,5 +11,3 @@ alias la='ls -A'
 alias ll='ls -alF'
 
 alias alert='terminal-notifier -title "$( [ $? -eq 0 ] && echo Terminal || echo Error )" -sound default -message "${CMD%%; alert}"'
-
-alias claude="$HOME/.claude/local/claude"
