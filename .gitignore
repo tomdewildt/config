@@ -11,6 +11,15 @@
 !.config/gtk-3.0
 !.config/gtk-3.0/bookmarks
 
+### Claude ###
+!.claude
+!.claude/settings.json
+!.claude/skills
+!.claude/skills/**/*
+!.config
+!.config/ccstatusline
+!.config/ccstatusline/settings.json
+
 ### Code ###
 !.config
 !.config/Code
