@@ -5,7 +5,7 @@
   "github.copilot.enable": {
     "*": true,
     "markdown": true,
-    "plaintext": true
+    "plaintext": true,
   },
   "github.copilot.nextEditSuggestions.enabled": true,
   // CSpell
@@ -17,8 +17,10 @@
     "uninstantiated",
     "vectorize",
     "vectorizer",
-    "weaviate"
+    "weaviate",
   ],
+  // Docker
+  "docker.extension.enableComposeLanguageServer": false,
   // Editor
   "editor.codeLens": false,
   "editor.formatOnSave": true,
@@ -27,7 +29,7 @@
   "editor.inlineSuggest.enabled": true,
   // Emmet
   "emmet.includeLanguages": {
-    "javascript": "javascriptreact"
+    "javascript": "javascriptreact",
   },
   // Explorer
   "explorer.compactFolders": false,
@@ -41,19 +43,19 @@
     "**/.git": true,
     "**/.svn": true,
     "**/.hg": true,
-    "**/CVS": true
+    "**/CVS": true,
   },
   "files.watcherExclude": {
     "**/.git/subtree-cache/**": true,
     "**/.git/objects/**": true,
-    "**/node_modules/**": true
+    "**/node_modules/**": true,
   },
   "search.exclude": {
     "**/bower_components": true,
     "**/*.code-search": true,
     "**/node_modules": true,
     "**/.DS_Store": true,
-    "**/.git": true
+    "**/.git": true,
   },
   // Git
   "git.autofetch": true,
@@ -67,8 +69,8 @@
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll": "explicit",
-      "source.organizeImports": "explicit"
-    }
+      "source.organizeImports": "explicit",
+    },
   },
   // Python
   "[python]": {
@@ -76,8 +78,8 @@
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll": "explicit",
-      "source.organizeImports": "explicit"
-    }
+      "source.organizeImports": "explicit",
+    },
   },
   "python.analysis.autoFormatStrings": true,
   "python.analysis.autoImportCompletions": true,
@@ -98,8 +100,8 @@
     "editor.formatOnSave": true,
     "editor.codeActionsOnSave": {
       "source.fixAll": "explicit",
-      "source.organizeImports": "explicit"
-    }
+      "source.organizeImports": "explicit",
+    },
   },
   // Terminal
   "terminal.integrated.fontSize": 14,
@@ -119,6 +121,6 @@
     "!env scalar",
     "!format sequence",
     "!include scalar",
-    "!or sequence"
-  ],
+    "!or sequence",
+  ]
 }
