@@ -1,0 +1,162 @@
+{
+  "version": 3,
+  "lines": [
+    [
+      {
+        "id": "1",
+        "type": "custom-text",
+        "customText": "M: ",
+        "color": "cyan"
+      },
+      {
+        "id": "2",
+        "type": "model",
+        "rawValue": true,
+        "color": "cyan"
+      },
+      {
+        "id": "3",
+        "type": "separator"
+      },
+      {
+        "id": "4",
+        "type": "custom-text",
+        "customText": "I: ",
+        "color": "blue"
+      },
+      {
+        "id": "5",
+        "type": "tokens-input",
+        "rawValue": true,
+        "color": "blue"
+      },
+      {
+        "id": "6",
+        "type": "separator"
+      },
+      {
+        "id": "7",
+        "type": "custom-text",
+        "customText": "O: ",
+        "color": "blue"
+      },
+      {
+        "id": "8",
+        "type": "tokens-output",
+        "rawValue": true,
+        "color": "blue"
+      },
+      {
+        "id": "9",
+        "type": "separator"
+      },
+      {
+        "id": "10",
+        "type": "custom-text",
+        "customText": "C: ",
+        "color": "magenta"
+      },
+      {
+        "id": "11",
+        "type": "context-percentage",
+        "rawValue": true,
+        "color": "magenta"
+      },
+      {
+        "id": "12",
+        "type": "separator"
+      },
+      {
+        "id": "13",
+        "type": "custom-text",
+        "customText": "S: ",
+        "color": "yellow"
+      },
+      {
+        "id": "14",
+        "type": "session-clock",
+        "rawValue": true,
+        "color": "yellow"
+      },
+      {
+        "id": "15",
+        "type": "separator"
+      },
+      {
+        "id": "16",
+        "type": "custom-text",
+        "customText": "B: ",
+        "color": "red"
+      },
+      {
+        "id": "17",
+        "type": "block-timer",
+        "rawValue": true,
+        "color": "red"
+      }
+    ],
+    [
+      {
+        "id": "1",
+        "type": "custom-text",
+        "customText": "B: ",
+        "color": "cyan"
+      },
+      {
+        "id": "2",
+        "type": "git-branch",
+        "rawValue": true,
+        "color": "cyan"
+      },
+      {
+        "id": "3",
+        "type": "separator"
+      },
+      {
+        "id": "4",
+        "type": "custom-text",
+        "customText": "W: ",
+        "color": "blue"
+      },
+      {
+        "id": "5",
+        "type": "git-worktree",
+        "rawValue": true,
+        "color": "blue"
+      },
+      {
+        "id": "6",
+        "type": "separator"
+      },
+      {
+        "id": "7",
+        "type": "custom-text",
+        "customText": "LoC: ",
+        "color": "yellow"
+      },
+      {
+        "id": "8",
+        "type": "git-changes",
+        "rawValue": true,
+        "color": "yellow"
+      }
+    ]
+  ],
+  "flexMode": "full-minus-40",
+  "compactThreshold": 60,
+  "colorLevel": 2,
+  "inheritSeparatorColors": false,
+  "globalBold": false,
+  "powerline": {
+    "enabled": false,
+    "separators": [
+      ""
+    ],
+    "separatorInvertBackground": [
+      false
+    ],
+    "startCaps": [],
+    "endCaps": [],
+    "autoAlign": false
+  }
+}
