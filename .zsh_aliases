@@ -10,4 +10,4 @@ alias l='ls -CF'
 alias la='ls -A'
 alias ll='ls -alF'
 
-alias alert='terminal-notifier -title "$( [ $? -eq 0 ] && echo Terminal || echo Error )" -sound default -message "${CMD%%; alert}"'
+alias alert='alerter --title "$( [ $? -eq 0 ] && echo Terminal || echo Error )" --message "${CMD%%; alert}" --sound default --timeout 5 < /dev/null > /dev/null 2>&1'
