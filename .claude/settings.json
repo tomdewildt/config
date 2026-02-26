@@ -42,6 +42,11 @@
             "type": "command",
             "statusMessage": "Running lint...",
             "command": "$HOME/.claude/hooks/lint.sh"
+          },
+          {
+            "type": "command",
+            "statusMessage": "Running loc check...",
+            "command": "$HOME/.claude/hooks/loc.sh"
           }
         ]
       }
