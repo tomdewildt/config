@@ -1,5 +1,7 @@
 #!/bin/bash
 set -euo pipefail
+export CLICOLOR=0
+export CLICOLOR_FORCE=0
 
 # Select fields
 INPUT=$(cat)
