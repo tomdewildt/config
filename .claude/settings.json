@@ -37,6 +37,11 @@
             "type": "command",
             "statusMessage": "Running format...",
             "command": "$HOME/.claude/hooks/format.sh"
+          },
+          {
+            "type": "command",
+            "statusMessage": "Running lint...",
+            "command": "$HOME/.claude/hooks/lint.sh"
           }
         ]
       }
