@@ -23,7 +23,20 @@
         "hooks": [
           {
             "type": "command",
+            "statusMessage": "Notifying user...",
             "command": "$HOME/.claude/hooks/notify.sh"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "statusMessage": "Running format...",
+            "command": "$HOME/.claude/hooks/format.sh"
           }
         ]
       }
