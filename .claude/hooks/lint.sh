@@ -6,17 +6,19 @@ export CLICOLOR_FORCE=0
 # Select fields
 INPUT=$(cat)
 FILE_PATH=$(echo "$INPUT" | jq -r '.tool_input.file_path')
+EXT="${FILE_PATH##*.}"
 
 # Run lint
-if [[ "$FILE_PATH" == *.go ]]; then
-    CONTEXT=$(go vet "$FILE_PATH" 2>&1) || true
-elif [[ "$FILE_PATH" == *.js || "$FILE_PATH" == *.jsx || "$FILE_PATH" == *.ts || "$FILE_PATH" == *.tsx ]]; then
-    CONTEXT=$(npx -y eslint --fix "$FILE_PATH" 2>&1) || true
-elif [[ "$FILE_PATH" == *.py ]]; then
-    CONTEXT=$(ruff check --fix "$FILE_PATH" 2>&1) || true
-elif [[ "$FILE_PATH" == *.tf || "$FILE_PATH" == *.tfvars ]]; then
-    CONTEXT=$(tflint "$FILE_PATH" 2>&1) || true
-fi
+case "$EXT" in
+    go)
+        CONTEXT=$(go vet "$FILE_PATH" 2>&1) ;;
+    js|jsx|ts|tsx)
+        CONTEXT=$(npx -y eslint --fix "$FILE_PATH" 2>&1) ;;
+    py)
+        CONTEXT=$(ruff check --fix "$FILE_PATH" 2>&1) ;;
+    tf|tfvars)
+        CONTEXT=$(tflint "$FILE_PATH" 2>&1) ;;
+esac || true
 
 # Output context
 if [[ -n "${CONTEXT:-}" ]]; then
