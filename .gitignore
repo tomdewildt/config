@@ -13,6 +13,8 @@
 
 ### Claude ###
 !.claude
+!.claude/hooks
+!.claude/hooks/**/*
 !.claude/settings.json
 !.claude/skills
 !.claude/skills/**/*
