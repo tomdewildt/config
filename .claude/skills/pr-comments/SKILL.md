@@ -1,7 +1,7 @@
 ---
 name: pr-comments
 description: Retrieve pull request comments and produce a validated action plan.
-argument-hint: [pr-number]
+argument-hint: <pr-number>
 disable-model-invocation: true
 user-invocable: true
 allowed-tools: Bash(./scripts/fetch-pr-content.sh:*)

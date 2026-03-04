@@ -1,7 +1,7 @@
 ---
 name: find-frequently-used-commands
 description: Find frequently used commands and suggest permission changes.
-argument-hint: [command]
+argument-hint: <command>
 disable-model-invocation: true
 user-invocable: true
 allowed-tools: Bash(./scripts/find-frequent-commands.py *), Bash(./scripts/find-full-commands.py *)
