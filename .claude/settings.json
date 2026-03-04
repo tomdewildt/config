@@ -1,56 +1,14 @@
 {
   "$schema": "https://json.schemastore.org/claude-code-settings.json",
-  "alwaysThinkingEnabled": true,
-  "attribution": {
-    "commit": "",
-    "pr": ""
-  },
   "cleanupPeriodDays": 12,
-  "enabledPlugins": {
-    "gopls-lsp@claude-plugins-official": true,
-    "pyright-lsp@claude-plugins-official": true,
-    "typescript-lsp@claude-plugins-official": true
-  },
   "env": {
     "CLAUDE_CODE_DISABLE_FEEDBACK_SURVEY": "1",
     "CLAUDE_CODE_DISABLE_TERMINAL_TITLE": "1",
     "DISABLE_TELEMETRY": "1"
   },
-  "hooks": {
-    "Notification": [
-      {
-        "matcher": "",
-        "hooks": [
-          {
-            "type": "command",
-            "statusMessage": "Notifying user...",
-            "command": "$HOME/.claude/hooks/notify.sh"
-          }
-        ]
-      }
-    ],
-    "PostToolUse": [
-      {
-        "matcher": "Edit|Write",
-        "hooks": [
-          {
-            "type": "command",
-            "statusMessage": "Running format...",
-            "command": "$HOME/.claude/hooks/format.sh"
-          },
-          {
-            "type": "command",
-            "statusMessage": "Running lint...",
-            "command": "$HOME/.claude/hooks/lint.sh"
-          },
-          {
-            "type": "command",
-            "statusMessage": "Running loc check...",
-            "command": "$HOME/.claude/hooks/loc.sh"
-          }
-        ]
-      }
-    ]
+  "attribution": {
+    "commit": "",
+    "pr": ""
   },
   "permissions": {
     "allow": [
@@ -98,9 +56,51 @@
       "Bash(git push *)"
     ]
   },
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/notify.sh",
+            "statusMessage": "Notifying user..."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/format.sh",
+            "statusMessage": "Running format..."
+          },
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/lint.sh",
+            "statusMessage": "Running lint..."
+          },
+          {
+            "type": "command",
+            "command": "$HOME/.claude/hooks/loc.sh",
+            "statusMessage": "Running loc check..."
+          }
+        ]
+      }
+    ]
+  },
   "statusLine": {
     "type": "command",
     "command": "npx -y ccstatusline@latest",
     "padding": 0
-  }
+  },
+  "enabledPlugins": {
+    "gopls-lsp@claude-plugins-official": true,
+    "pyright-lsp@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true
+  },
+  "alwaysThinkingEnabled": true
 }
