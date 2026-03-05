@@ -60,3 +60,6 @@ eval "$(fzf --bash)"
 # Environment
 export EDITOR=nano
 export GOPATH=$HOME/.go
+
+# Tooling
+eval "$(mise activate bash)"
