@@ -15,6 +15,7 @@ autoload -Uz compinit && compinit
 chmod go-w /opt/homebrew/share
 chmod -R go-w /opt/homebrew/share/zsh
 complete -C "/opt/homebrew/bin/aws_completer" aws
+source <(fzf --zsh)
 
 # Environment
 export CLICOLOR=1
