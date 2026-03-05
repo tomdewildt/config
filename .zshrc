@@ -22,3 +22,6 @@ export CLICOLOR=1
 export CLICOLOR_FORCE=1
 export EDITOR=nano
 export GOPATH=$HOME/.go
+
+# Tooling
+eval "$(mise activate zsh)"
