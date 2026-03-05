@@ -1,9 +1,11 @@
 sources=()
 paths=(
     "$HOME/.local/bin"
+    "$HOME/.gem/ruby/4.0.0/bin"
     "$HOME/.go/bin"
     "/opt/homebrew/opt/node@22/bin"
     "/opt/homebrew/opt/postgresql@15/bin"
+    "/opt/homebrew/opt/ruby/bin"
     "/opt/homebrew/bin"
     "/opt/homebrew/sbin"
 )
