@@ -74,7 +74,7 @@
       },
       {
         "id": "14",
-        "type": "session-clock",
+        "type": "session-usage",
         "rawValue": true,
         "color": "yellow"
       },
@@ -85,12 +85,12 @@
       {
         "id": "16",
         "type": "custom-text",
-        "customText": "B: ",
+        "customText": "R: ",
         "color": "red"
       },
       {
         "id": "17",
-        "type": "block-timer",
+        "type": "reset-timer",
         "rawValue": true,
         "color": "red"
       }
