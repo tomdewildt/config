@@ -8,6 +8,9 @@ INPUT=$(cat)
 FILE_PATH=$(echo "$INPUT" | jq -r '.tool_input.file_path')
 EXT="${FILE_PATH##*.}"
 
+# Change directory
+cd "$(dirname "$FILE_PATH")"
+
 # Run lint
 case "$EXT" in
     go)

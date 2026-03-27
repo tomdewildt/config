@@ -8,14 +8,22 @@ INPUT=$(cat)
 FILE_PATH=$(echo "$INPUT" | jq -r '.tool_input.file_path')
 EXT="${FILE_PATH##*.}"
 
+# Change directory
+cd "$(dirname "$FILE_PATH")"
+
 # Run format
 case "$EXT" in
     css|html|js|json|jsx|ts|tsx)
-        npx -y prettier --write "$FILE_PATH" ;;
+        CONTEXT=$(npx -y prettier --write "$FILE_PATH" 2>&1) ;;
     go)
-        go fmt "$FILE_PATH" ;;
+        CONTEXT=$(go fmt "$FILE_PATH" 2>&1) ;;
     py)
-        ruff format "$FILE_PATH" ;;
+        CONTEXT=$(ruff format "$FILE_PATH" 2>&1) ;;
     tf|tfvars)
-        terraform fmt "$FILE_PATH" ;;
-esac &> /dev/null || true
+        CONTEXT=$(terraform fmt "$FILE_PATH" 2>&1) ;;
+esac || true
+
+# Output context
+if [[ -n "${CONTEXT:-}" ]]; then
+    jq -n --arg context "$CONTEXT" '{"hookSpecificOutput": {"hookEventName": "PostToolUse", "additionalContext": $context}}'
+fi
