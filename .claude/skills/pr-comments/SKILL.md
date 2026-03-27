@@ -19,7 +19,7 @@ ${ARGUMENTS}
 
 ## Steps
 
-1. Execute the following script to retrieve the pull request content: `./scripts/fetch-pr-content.sh <number>`
+1. Execute the following script to retrieve the pull request content: `${CLAUDE_SKILL_DIR}/scripts/fetch-pr-content.sh <number>`
    - If the user did not provide a pull request number, run the script without arguments to fetch the pull request for the current branch.
 
 2. For each comment:
@@ -37,6 +37,6 @@ ${ARGUMENTS}
 
 ### Scripts
 
-Tools in `./scripts/`:
+Tools in `${CLAUDE_SKILL_DIR}/scripts/`:
 
 - `fetch-pr-content.sh` - Fetches pull request content and comments

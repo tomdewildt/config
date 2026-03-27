@@ -21,7 +21,7 @@ ${ARGUMENTS}
 
 ### When no argument is provided
 
-1. Run `./scripts/find-frequent-commands.py` to retrieve command frequencies across all projects.
+1. Run `${CLAUDE_SKILL_DIR}/scripts/find-frequent-commands.py` to retrieve command frequencies across all projects.
 
 2. Read `~/.claude/settings.json` to get the current permission rules (the `permissions.allow`, `permissions.deny`, and `permissions.ask` arrays).
 
@@ -37,7 +37,7 @@ ${ARGUMENTS}
 
 ### When a command argument is provided
 
-1. Run `./scripts/find-full-commands.py <command>` to retrieve all full invocations of the given command.
+1. Run `${CLAUDE_SKILL_DIR}/scripts/find-full-commands.py <command>` to retrieve all full invocations of the given command.
 
 2. Read `~/.claude/settings.json` to get the current permission rules.
 
@@ -58,7 +58,7 @@ ${ARGUMENTS}
 
 ### Scripts
 
-Tools in `./scripts/`:
+Tools in `${CLAUDE_SKILL_DIR}/scripts/`:
 
 - `find-frequent-commands.py` - Finds frequently used commands across all projects. Outputs a JSON object mapping command names to their frequency counts.
 - `find-full-commands.py <command>` - Finds all full command invocations matching a given command name. Outputs a JSON array of full command strings.
