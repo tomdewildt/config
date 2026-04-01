@@ -92,6 +92,8 @@
   "python.analysis.typeCheckingMode": "standard",
   "python.languageServer": "Pylance",
   "python.venvFolders": [".env", ".venv", "env", "venv"],
+  "python.terminal.activateEnvInCurrentTerminal": false,
+  "python.terminal.activateEnvironment": false,
   // Telemetry
   "redhat.telemetry.enabled": false,
   "telemetry.telemetryLevel": "off",
