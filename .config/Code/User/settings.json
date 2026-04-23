@@ -82,6 +82,7 @@
       "source.organizeImports": "explicit",
     },
   },
+  "notebook.lineNumbers": "on",
   "python.analysis.autoFormatStrings": true,
   "python.analysis.autoImportCompletions": true,
   "python.analysis.completeFunctionParens": true,
