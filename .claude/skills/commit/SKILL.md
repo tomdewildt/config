@@ -51,7 +51,9 @@ ${ARGUMENTS}
    - Run `git checkout -b <branch>`.
 
 5. Group the in-scope changes into logical commits.
-   - One purpose per commit.
+   - Prefer more, smaller commits. Group files by concern (dependencies, source, tests, deployment, tooling).
+   - One purpose per commit. If you need `and` to describe it, split it.
+   - Intermediate commits don't need to leave the repo in a working state.
    - Unrelated changes split apart even within the same file.
    - Do not stash or reorder.
    - Stage only the files that belong to each commit.
