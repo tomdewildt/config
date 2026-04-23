@@ -80,6 +80,6 @@ ${ARGUMENTS}
 
 9. Create the PR/MR:
    - GitHub: `gh pr create --title "<title>" --body "..."`.
-   - GitLab: `glab mr create --title "<title>" --description "..." --target-branch <base>`. Check recent MRs with `glab mr list` to see whether `--remove-source-branch` or `--squash` match the project's convention.
+   - GitLab: `glab mr create --title "<title>" --description "..." --target-branch <base>`.
 
 10. Report the PR/MR URL back to the user.
