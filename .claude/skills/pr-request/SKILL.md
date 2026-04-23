@@ -4,7 +4,7 @@ description: Open a pull request (GitHub) or merge request (GitLab) for the curr
 argument-hint: [<issue-number>] [<commit-filter>]
 disable-model-invocation: true
 user-invocable: true
-allowed-tools: Bash(git status:*), Bash(git branch:*), Bash(git remote:*), Bash(git log:*), Bash(git diff:*), Bash(git push:*), Bash(git rev-parse:*), Bash(gh pr:*), Bash(glab mr:*)
+allowed-tools: Bash(git branch:*), Bash(git diff:*), Bash(gh pr:*), Bash(git push:*), Bash(git remote:*), Bash(git rev-parse:*), Bash(git status:*), Bash(glab mr:*), Bash(git log:*)
 ---
 
 ## Your Task
