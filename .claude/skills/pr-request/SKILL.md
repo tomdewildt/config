@@ -47,6 +47,8 @@ ${ARGUMENTS}
 
 1. Review the context above. If the status shows uncommitted changes, invoke the `commit` skill to handle them, passing any commit-filter argument through so the user's narrowing instruction is respected.
    - That skill also offers to create a branch when the user is on `main`/`master`.
+   - After it returns, re-read `git branch --show-current` and `git log --oneline origin/HEAD..HEAD` — the context above was captured before the commit ran and is now stale.
+   - If there are still no commits on the branch after that, stop there is nothing to PR.
 
 2. Detect the platform from the remote shown in the context:
    - `github.com` → use `gh`.
