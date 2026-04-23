@@ -4,7 +4,7 @@ description: Find frequently used commands and suggest permission changes.
 argument-hint: <command>
 disable-model-invocation: true
 user-invocable: true
-allowed-tools: Bash(./scripts/find-frequent-commands.py *), Bash(./scripts/find-full-commands.py *)
+allowed-tools: Bash(./scripts/find-frequent-commands.py:*), Bash(./scripts/find-full-commands.py:*)
 ---
 
 ## Your Task

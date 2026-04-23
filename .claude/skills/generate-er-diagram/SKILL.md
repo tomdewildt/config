@@ -4,7 +4,7 @@ description: Generate an ER diagram from database model code (SQLAlchemy, Prisma
 argument-hint: <path>
 disable-model-invocation: true
 user-invocable: true
-allowed-tools: Bash(npx *)
+allowed-tools: Bash(npx:*)
 ---
 
 ## Your Task
