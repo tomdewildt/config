@@ -20,7 +20,9 @@ source <(fzf --zsh)
 # Environment
 export CLICOLOR=1
 export CLICOLOR_FORCE=1
+export DO_NOT_TRACK=true
 export EDITOR=nano
+export GH_TELEMETRY=false
 export GOPATH=$HOME/.go
 
 # Tooling
