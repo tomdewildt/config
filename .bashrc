@@ -58,7 +58,9 @@ fi
 eval "$(fzf --bash)"
 
 # Environment
+export DO_NOT_TRACK=true
 export EDITOR=nano
+export GH_TELEMETRY=false
 export GOPATH=$HOME/.go
 
 # Tooling
