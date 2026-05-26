@@ -1,5 +1,6 @@
 sources=()
 paths=(
+    "$HOME/.lmstudio/bin"
     "$HOME/.local/bin"
     "$HOME/.go/bin"
     "/opt/go/bin"
