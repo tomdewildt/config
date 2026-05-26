@@ -1,5 +1,6 @@
 sources=()
 paths=(
+    "$HOME/.lmstudio/bin"
     "$HOME/.local/bin"
     "$HOME/.gem/ruby/4.0.0/bin"
     "$HOME/.go/bin"
