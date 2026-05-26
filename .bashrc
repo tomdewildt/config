@@ -62,6 +62,8 @@ export DO_NOT_TRACK=true
 export EDITOR=nano
 export GH_TELEMETRY=false
 export GOPATH=$HOME/.go
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 # Tooling
 eval "$(mise activate bash)"
