@@ -33,12 +33,14 @@
 !.github/ISSUE_TEMPLATE/
 !.github/ISSUE_TEMPLATE/bug-report.md
 !.github/ISSUE_TEMPLATE/feature-request.md
-!.github/config.yml
 !.github/CONTRIBUTING.md
-!.github/issue_label_bot.yaml
 !.github/PULL_REQUEST_TEMPLATE.md
-!.github/renovate.json
-!.github/stale.yml
+!.github/dependabot.yml
+!.github/issue-labeler.yml
+!.github/pr-labeler.yml
+!.github/workflows/
+!.github/workflows/stale.yml
+!.github/workflows/triage.yml
 !.gitconfig
 
 ### Nautilus ###
