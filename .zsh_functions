@@ -8,12 +8,12 @@ claude-cloud() {
 }
 
 claude-local() {
-    if ! lms ps --json 2>/dev/null | grep -q '"modelKey":"qwen/qwen3.6-35b-a3b"'; then
-        lms load qwen/qwen3.6-35b-a3b -c 262144 -y
+    if ! lms ps --json 2>/dev/null | grep -q '"modelKey":"qwen/qwen3.6-27b"'; then
+        lms load qwen/qwen3.6-27b -c 131072 -y
     fi
     printf '\033]0;claude (local)\007'
-    export ANTHROPIC_BASE_URL=http://localhost:1234
-    export ANTHROPIC_AUTH_TOKEN=lmstudio
-    export CLAUDE_CODE_MAX_CONTEXT_TOKENS=262144
-    claude --model qwen/qwen3.6-35b-a3b "$@"
+    ANTHROPIC_BASE_URL=http://localhost:1234 \
+    ANTHROPIC_AUTH_TOKEN=lmstudio \
+    CLAUDE_CODE_MAX_CONTEXT_TOKENS=131072 \
+    claude --model qwen/qwen3.6-27b "$@"
 }
