@@ -12,19 +12,24 @@
   },
   "permissions": {
     "allow": [
+      "Bash(awk:*)",
       "Bash(cat:*)",
       "Bash(cd:*)",
       "Bash(cp:*)",
+      "Bash(curl:*)",
       "Bash(docker:*)",
+      "Bash(echo:*)",
       "Bash(find:*)",
       "Bash(gh:*)",
       "Bash(git:*)",
+      "Bash(glab:*)",
       "Bash(go:*)",
       "Bash(grep:*)",
       "Bash(head:*)",
       "Bash(jq:*)",
       "Bash(ls:*)",
       "Bash(make:*)",
+      "Bash(mise:*)",
       "Bash(mv:*)",
       "Bash(node:*)",
       "Bash(npm:*)",
@@ -36,6 +41,7 @@
       "Bash(uv:*)",
       "Bash(wc:*)",
       "Bash(which:*)",
+      "Bash(xargs:*)",
       "Read",
       "WebFetch",
       "WebSearch"
@@ -54,7 +60,9 @@
       "Bash(gh pr merge:*)",
       "Bash(git commit:*)",
       "Bash(git push:*)",
-      "Bash(git reset:*)"
+      "Bash(git reset:*)",
+      "Bash(glab mr create:*)",
+      "Bash(glab mr merge:*)"
     ]
   },
   "model": "claude-opus-4-6[1m]",
