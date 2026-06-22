@@ -4,6 +4,7 @@ paths=(
     "$HOME/.local/bin"
     "$HOME/.gem/ruby/4.0.0/bin"
     "$HOME/.go/bin"
+    "/opt/homebrew/opt/go@1.21/bin"
     "/opt/homebrew/opt/node@24/bin"
     "/opt/homebrew/opt/postgresql@18/bin"
     "/opt/homebrew/opt/ruby/bin"
