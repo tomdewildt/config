@@ -113,6 +113,7 @@
   "terminal.integrated.tabs.enabled": true,
   "terminal.integrated.gpuAcceleration": "off",
   "terminal.integrated.enablePersistentSessions": false,
+  "terminal.integrated.mouseWheelScrollSensitivity": 3,
   // Visual Studio Intellicode
   "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
   // Window
