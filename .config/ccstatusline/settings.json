@@ -114,28 +114,16 @@
       },
       {
         "id": "4",
-        "type": "custom-text",
-        "customText": "W: ",
-        "color": "blue"
-      },
-      {
-        "id": "5",
-        "type": "git-worktree",
-        "rawValue": true,
-        "color": "blue"
-      },
-      {
-        "id": "6",
         "type": "separator"
       },
       {
-        "id": "7",
+        "id": "5",
         "type": "custom-text",
         "customText": "LoC: ",
         "color": "yellow"
       },
       {
-        "id": "8",
+        "id": "6",
         "type": "git-changes",
         "rawValue": true,
         "color": "yellow"
