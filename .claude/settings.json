@@ -65,7 +65,7 @@
       "Bash(glab mr merge:*)"
     ]
   },
-  "model": "claude-opus-4-6[1m]",
+  "model": "claude-opus-4-8[1m]",
   "hooks": {
     "Notification": [
       {
