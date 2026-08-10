@@ -5,14 +5,14 @@
       {
         "id": "1",
         "type": "custom-text",
-        "customText": "M: ",
-        "color": "cyan"
+        "color": "cyan",
+        "customText": "M: "
       },
       {
         "id": "2",
         "type": "model",
-        "rawValue": true,
-        "color": "cyan"
+        "color": "cyan",
+        "rawValue": true
       },
       {
         "id": "3",
@@ -21,14 +21,109 @@
       {
         "id": "4",
         "type": "custom-text",
-        "customText": "I: ",
-        "color": "blue"
+        "color": "blue",
+        "customText": "I/O: "
       },
       {
         "id": "5",
         "type": "tokens-input",
+        "color": "blue",
+        "rawValue": true
+      },
+      {
+        "id": "6",
+        "type": "custom-text",
+        "color": "blue",
+        "customText": "/"
+      },
+      {
+        "id": "7",
+        "type": "tokens-output",
+        "color": "blue",
+        "rawValue": true
+      },
+      {
+        "id": "8",
+        "type": "custom-text",
+        "color": "blue",
+        "customText": " ("
+      },
+      {
+        "id": "9",
+        "type": "total-speed",
+        "color": "blue",
         "rawValue": true,
-        "color": "blue"
+        "metadata": {
+          "windowSeconds": "120"
+        }
+      },
+      {
+        "id": "10",
+        "type": "custom-text",
+        "color": "blue",
+        "customText": ")"
+      },
+      {
+        "id": "11",
+        "type": "separator"
+      },
+      {
+        "id": "12",
+        "type": "custom-text",
+        "customText": "CHR: ",
+        "color": "magenta"
+      },
+      {
+        "id": "13",
+        "type": "cache-hit-rate",
+        "rawValue": true,
+        "color": "magenta"
+      },
+      {
+        "id": "14",
+        "type": "separator"
+      },
+      {
+        "id": "15",
+        "type": "custom-text",
+        "color": "yellow",
+        "customText": "CTX: "
+      },
+      {
+        "id": "16",
+        "type": "context-percentage",
+        "color": "yellow",
+        "rawValue": true
+      }
+    ],
+    [
+      {
+        "id": "1",
+        "type": "custom-text",
+        "color": "cyan",
+        "customText": "B: "
+      },
+      {
+        "id": "2",
+        "type": "git-branch",
+        "color": "cyan",
+        "rawValue": true
+      },
+      {
+        "id": "3",
+        "type": "separator"
+      },
+      {
+        "id": "4",
+        "type": "custom-text",
+        "color": "blue",
+        "customText": "S: "
+      },
+      {
+        "id": "5",
+        "type": "session-usage",
+        "color": "blue",
+        "rawValue": true
       },
       {
         "id": "6",
@@ -37,104 +132,25 @@
       {
         "id": "7",
         "type": "custom-text",
-        "customText": "O: ",
-        "color": "blue"
+        "color": "magenta",
+        "customText": "R: "
       },
       {
         "id": "8",
-        "type": "tokens-output",
-        "rawValue": true,
-        "color": "blue"
-      },
-      {
-        "id": "9",
-        "type": "separator"
-      },
-      {
-        "id": "10",
-        "type": "custom-text",
-        "customText": "C: ",
-        "color": "magenta"
-      },
-      {
-        "id": "11",
-        "type": "context-percentage",
-        "rawValue": true,
-        "color": "magenta"
-      },
-      {
-        "id": "12",
-        "type": "separator"
-      },
-      {
-        "id": "13",
-        "type": "custom-text",
-        "customText": "S: ",
-        "color": "yellow"
-      },
-      {
-        "id": "14",
-        "type": "session-usage",
-        "rawValue": true,
-        "color": "yellow"
-      },
-      {
-        "id": "15",
-        "type": "separator"
-      },
-      {
-        "id": "16",
-        "type": "custom-text",
-        "customText": "R: ",
-        "color": "red"
-      },
-      {
-        "id": "17",
         "type": "reset-timer",
-        "rawValue": true,
-        "color": "red"
-      }
-    ],
-    [
-      {
-        "id": "1",
-        "type": "custom-text",
-        "customText": "B: ",
-        "color": "cyan"
-      },
-      {
-        "id": "2",
-        "type": "git-branch",
-        "rawValue": true,
-        "color": "cyan"
-      },
-      {
-        "id": "3",
-        "type": "separator"
-      },
-      {
-        "id": "4",
-        "type": "separator"
-      },
-      {
-        "id": "5",
-        "type": "custom-text",
-        "customText": "LoC: ",
-        "color": "yellow"
-      },
-      {
-        "id": "6",
-        "type": "git-changes",
-        "rawValue": true,
-        "color": "yellow"
+        "color": "magenta",
+        "rawValue": true
       }
     ]
   ],
   "flexMode": "full-minus-40",
   "compactThreshold": 60,
   "colorLevel": 2,
+  "defaultPaddingSide": "both",
   "inheritSeparatorColors": false,
   "globalBold": false,
+  "gitCacheTtlSeconds": 5,
+  "minimalistMode": false,
   "powerline": {
     "enabled": false,
     "separators": [
@@ -145,6 +161,7 @@
     ],
     "startCaps": [],
     "endCaps": [],
-    "autoAlign": false
+    "autoAlign": false,
+    "continueThemeAcrossLines": false
   }
 }
