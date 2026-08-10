@@ -1,5 +1,11 @@
 *
 
+### 1Password ###
+!.config
+!.config/1Password
+!.config/1Password/ssh
+!.config/1Password/ssh/agent.toml
+
 ### Bash ###
 !.bashrc
 !.profile
