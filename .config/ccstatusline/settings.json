@@ -70,14 +70,14 @@
       {
         "id": "12",
         "type": "custom-text",
-        "customText": "CHR: ",
-        "color": "magenta"
+        "color": "magenta",
+        "customText": "CHR: "
       },
       {
         "id": "13",
         "type": "cache-hit-rate",
-        "rawValue": true,
-        "color": "magenta"
+        "color": "magenta",
+        "rawValue": true
       },
       {
         "id": "14",
@@ -150,7 +150,7 @@
   "inheritSeparatorColors": false,
   "globalBold": false,
   "gitCacheTtlSeconds": 5,
-  "minimalistMode": false,
+  "minimalistMode": true,
   "powerline": {
     "enabled": false,
     "separators": [
