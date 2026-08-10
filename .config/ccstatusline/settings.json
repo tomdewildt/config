@@ -5,14 +5,14 @@
       {
         "id": "1",
         "type": "custom-text",
-        "customText": "M: ",
-        "color": "cyan"
+        "color": "cyan",
+        "customText": "M: "
       },
       {
         "id": "2",
         "type": "model",
-        "rawValue": true,
-        "color": "cyan"
+        "color": "cyan",
+        "rawValue": true
       },
       {
         "id": "3",
@@ -21,92 +21,93 @@
       {
         "id": "4",
         "type": "custom-text",
-        "customText": "I: ",
-        "color": "blue"
+        "color": "blue",
+        "customText": "I/O: "
       },
       {
         "id": "5",
         "type": "tokens-input",
-        "rawValue": true,
-        "color": "blue"
+        "color": "blue",
+        "rawValue": true
       },
       {
         "id": "6",
-        "type": "separator"
+        "type": "custom-text",
+        "color": "blue",
+        "customText": "/"
       },
       {
         "id": "7",
-        "type": "custom-text",
-        "customText": "O: ",
-        "color": "blue"
+        "type": "tokens-output",
+        "color": "blue",
+        "rawValue": true
       },
       {
         "id": "8",
-        "type": "tokens-output",
-        "rawValue": true,
-        "color": "blue"
+        "type": "custom-text",
+        "color": "blue",
+        "customText": " ("
       },
       {
         "id": "9",
-        "type": "separator"
+        "type": "total-speed",
+        "color": "blue",
+        "rawValue": true,
+        "metadata": {
+          "windowSeconds": "120"
+        }
       },
       {
         "id": "10",
         "type": "custom-text",
-        "customText": "C: ",
-        "color": "magenta"
+        "color": "blue",
+        "customText": ")"
       },
       {
         "id": "11",
-        "type": "context-percentage",
+        "type": "separator"
+      },
+      {
+        "id": "12",
+        "type": "custom-text",
+        "customText": "CHR: ",
+        "color": "magenta"
+      },
+      {
+        "id": "13",
+        "type": "cache-hit-rate",
         "rawValue": true,
         "color": "magenta"
       },
       {
-        "id": "12",
-        "type": "separator"
-      },
-      {
-        "id": "13",
-        "type": "custom-text",
-        "customText": "S: ",
-        "color": "yellow"
-      },
-      {
         "id": "14",
-        "type": "session-usage",
-        "rawValue": true,
-        "color": "yellow"
+        "type": "separator"
       },
       {
         "id": "15",
-        "type": "separator"
+        "type": "custom-text",
+        "color": "yellow",
+        "customText": "CTX: "
       },
       {
         "id": "16",
-        "type": "custom-text",
-        "customText": "R: ",
-        "color": "red"
-      },
-      {
-        "id": "17",
-        "type": "reset-timer",
-        "rawValue": true,
-        "color": "red"
+        "type": "context-percentage",
+        "color": "yellow",
+        "rawValue": true
       }
     ],
     [
       {
         "id": "1",
         "type": "custom-text",
-        "customText": "B: ",
-        "color": "cyan"
+        "color": "cyan",
+        "customText": "B: "
       },
       {
         "id": "2",
         "type": "git-branch",
-        "rawValue": true,
-        "color": "cyan"
+        "color": "cyan",
+        "rawValue": true
       },
       {
         "id": "3",
@@ -115,14 +116,14 @@
       {
         "id": "4",
         "type": "custom-text",
-        "customText": "W: ",
-        "color": "blue"
+        "color": "blue",
+        "customText": "S: "
       },
       {
         "id": "5",
-        "type": "git-worktree",
-        "rawValue": true,
-        "color": "blue"
+        "type": "session-usage",
+        "color": "blue",
+        "rawValue": true
       },
       {
         "id": "6",
@@ -131,22 +132,25 @@
       {
         "id": "7",
         "type": "custom-text",
-        "customText": "LoC: ",
-        "color": "yellow"
+        "color": "magenta",
+        "customText": "R: "
       },
       {
         "id": "8",
-        "type": "git-changes",
-        "rawValue": true,
-        "color": "yellow"
+        "type": "reset-timer",
+        "color": "magenta",
+        "rawValue": true
       }
     ]
   ],
   "flexMode": "full-minus-40",
   "compactThreshold": 60,
   "colorLevel": 2,
+  "defaultPaddingSide": "both",
   "inheritSeparatorColors": false,
   "globalBold": false,
+  "gitCacheTtlSeconds": 5,
+  "minimalistMode": false,
   "powerline": {
     "enabled": false,
     "separators": [
@@ -157,6 +161,7 @@
     ],
     "startCaps": [],
     "endCaps": [],
-    "autoAlign": false
+    "autoAlign": false,
+    "continueThemeAcrossLines": false
   }
 }
