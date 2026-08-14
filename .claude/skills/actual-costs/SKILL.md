@@ -1,7 +1,7 @@
 ---
 name: actual-costs
 description: Report what your Claude Code usage would cost at pay-as-you-go API rates.
-argument-hint: "[daily|weekly|monthly|session|blocks] [--since YYYYMMDD] [--until YYYYMMDD]"
+argument-hint: [daily|weekly|monthly|session|blocks] [--since YYYYMMDD] [--until YYYYMMDD]
 disable-model-invocation: true
 user-invocable: true
 allowed-tools: Bash(npx:*), Bash(claude auth status:*), WebFetch
@@ -60,3 +60,4 @@ ${ARGUMENTS}
 - `enterprise` bills the seat fee plus metered API usage with no included pool.
 - If `subscriptionType` is missing or unrecognized, name it as reported and skip the multiplier.
 - If the fetch fails, say so and give the comparison qualitatively rather than guessing a number.
+
