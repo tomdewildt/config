@@ -46,7 +46,7 @@ ${ARGUMENTS}
    - If there are no commits yet, default to conventional commits.
 
 4. If the branch shown in the context is `main` or `master`, ask whether to create a new branch first. If yes:
-   - Infer a name from the changes. Use conventional-commit prefixes plus a short kebab-case description (e.g. `feat/add-mfa-support`).
+   - Infer a name from the changes. Pick the prefix from the conventional commit types list below that best matches the nature of the change, plus a short kebab-case description (e.g. `feat/add-mfa-support`, `fix/null-pointer-on-login`, `docs/update-readme-badge`).
    - Confirm the name with the user.
    - Run `git checkout -b <branch>`.
 
