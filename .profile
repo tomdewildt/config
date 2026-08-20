@@ -1,7 +1,10 @@
 sources=()
 paths=(
+    "$HOME/.bun/bin"
+    "$HOME/.duckdb/cli/latest"
     "$HOME/.lmstudio/bin"
     "$HOME/.local/bin"
+    "$HOME/.gem/ruby/4.0.0/bin"
     "$HOME/.go/bin"
     "/opt/go/bin"
 )
