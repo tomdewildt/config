@@ -55,7 +55,24 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
-eval "$(fzf --bash)"
+
+command -v aws_completer > /dev/null && complete -C aws_completer aws
+command -v bun > /dev/null && source <(SHELL=bash bun completions)
+command -v codex > /dev/null && source <(codex completion bash 2>/dev/null)
+command -v dive > /dev/null && source <(dive completion bash 2>/dev/null)
+command -v fzf > /dev/null && eval "$(fzf --bash)"
+command -v gh > /dev/null && source <(gh completion -s bash 2>/dev/null)
+command -v glab > /dev/null && source <(glab completion -s bash 2>/dev/null)
+command -v mise > /dev/null && source <(mise completion bash 2>/dev/null)
+command -v ngrok > /dev/null && source <(ngrok completion 2>/dev/null)
+command -v npm > /dev/null && source <(npm completion 2>/dev/null)
+command -v packer > /dev/null && complete -o nospace -C "$(command -v packer)" packer
+command -v rustup > /dev/null && source <(rustup completions bash)
+command -v terraform > /dev/null && complete -o nospace -C "$(command -v terraform)" terraform
+command -v uv > /dev/null && source <(uv generate-shell-completion bash)
+
+[ -f /usr/lib/google-cloud-sdk/completion.bash.inc ] && source /usr/lib/google-cloud-sdk/completion.bash.inc
+[ -f "$HOME/google-cloud-sdk/completion.bash.inc" ] && source "$HOME/google-cloud-sdk/completion.bash.inc"
 
 # Environment
 export DO_NOT_TRACK=true
@@ -66,4 +83,4 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 # Tooling
-eval "$(mise activate bash)"
+command -v mise > /dev/null && eval "$(mise activate bash)"
