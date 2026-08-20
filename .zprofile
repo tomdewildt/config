@@ -8,6 +8,7 @@ paths=(
     "/opt/homebrew/opt/node@24/bin"
     "/opt/homebrew/opt/postgresql@18/bin"
     "/opt/homebrew/opt/ruby/bin"
+    "/opt/homebrew/opt/rustup/bin"
     "/opt/homebrew/bin"
     "/opt/homebrew/sbin"
 )
