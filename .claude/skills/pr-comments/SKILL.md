@@ -44,9 +44,8 @@ ${ARGUMENTS}
   - If a comment is wrong use 1 to 2 sentences.
 - Lead with technical substance:
   - If a comment is wrong or incomplete, say why plainly.
-- Sound natural:
-  - Try to avoid jargon.
-  - Use plain english.
+- Sound natural, no engineering jargon:
+  - If a reviewer might have to look a word up, use plain words instead.
   - Do not polish your reply too much.
 - Avoid bot-like phrasing:
   - No marketing tone.
@@ -58,7 +57,7 @@ ${ARGUMENTS}
 
 Examples:
 
-> Done is cumulative + incremented synchronously so it's already monotonic here. The actual reorder is the concurrent chunk POSTs racing, so I guarded it in updateJob instead. Tests in jobs-update.test.ts
+> Done only ever counts up here since it's incremented in order, so it can't go backwards. The real reorder is the concurrent chunk POSTs racing, so I guarded it in updateJob instead.
 
 > Changed it!
 
