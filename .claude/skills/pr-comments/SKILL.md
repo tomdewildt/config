@@ -33,7 +33,36 @@ ${ARGUMENTS}
 
 3. Go into plan mode and create a structured plan to address the comments.
 
+4. For each comment worth a reply, draft a suggested response in the reply style below and present it in the chat. Do NOT post it. Only post replies to the PR/MR if the user explicitly asks you to ("push the comments", "post the replies"); otherwise the drafts are for the user to send.
+
 ## Additional Resources
+
+### Reply Style
+
+- Be short.
+  - If you simply fixed something say the thing and stop.
+  - If a comment is wrong use 1 to 2 sentences.
+- Lead with technical substance:
+  - If a comment is wrong or incomplete, say why plainly.
+- Sound natural:
+  - Try to avoid jargon.
+  - Use plain english.
+  - Do not polish your reply too much.
+- Avoid bot-like phrasing:
+  - No marketing tone.
+  - No em-dashes
+  - Don't restate the reviewer's comment before answering.
+- Reference code plainly:
+  - Mention files, functions, and symbols bare.
+  - No backticks unless they're actually useful.
+
+Examples:
+
+> Done is cumulative + incremented synchronously so it's already monotonic here. The actual reorder is the concurrent chunk POSTs racing, so I guarded it in updateJob instead. Tests in jobs-update.test.ts
+
+> Changed it!
+
+> Fixed!
 
 ### Scripts
 
