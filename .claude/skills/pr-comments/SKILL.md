@@ -57,7 +57,7 @@ ${ARGUMENTS}
 
 Examples:
 
-> Done only ever counts up here since it's incremented in order, so it can't go backwards. The real reorder is the concurrent chunk POSTs racing, so I guarded it in updateJob instead.
+> Only ever counts up here since it's incremented in order, so it can't go backwards.
 
 > Changed it!
 
