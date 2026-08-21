@@ -39,11 +39,22 @@ ${ARGUMENTS}
 
 ### Reply Style
 
-- Be short. One to three sentences. Say the thing and stop.
-- Lead with technical substance. If a comment is wrong or incomplete, say why plainly. If the fix landed somewhere other than where the thread sits, say where.
-- Sound natural, not polished. Capitalize the first letter, but skip unnecessary polish. A trailing "changed it" is fine.
-- Avoid bot-like phrasing. No marketing tone, no em-dashes, and don't restate the reviewer's comment before answering.
-- Reference code plainly. Mention files, functions, and symbols bare. No backticks unless they're actually useful.
+- Be short.
+  - If you simply fixed something say the thing and stop.
+  - If a comment is wrong use 1 to 2 sentences.
+- Lead with technical substance:
+  - If a comment is wrong or incomplete, say why plainly.
+- Sound natural:
+  - Try to avoid jargon.
+  - Use plain english.
+  - Do not polish your reply too much.
+- Avoid bot-like phrasing:
+  - No marketing tone.
+  - No em-dashes
+  - Don't restate the reviewer's comment before answering.
+- Reference code plainly:
+  - Mention files, functions, and symbols bare.
+  - No backticks unless they're actually useful.
 
 Examples:
 
