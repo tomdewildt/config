@@ -5,6 +5,7 @@ argument-hint: [<issue-number>] [<commit-filter>]
 disable-model-invocation: true
 user-invocable: true
 allowed-tools: Bash(git branch:*), Bash(git diff:*), Bash(gh pr:*), Bash(git push:*), Bash(git remote:*), Bash(git rev-parse:*), Bash(git status:*), Bash(glab mr:*), Bash(git log:*)
+disallowed-tools: Bash(git add:*), Bash(git commit:*), Bash(git stash:*)
 ---
 
 ## Your Task
@@ -69,7 +70,14 @@ ${ARGUMENTS}
 
 7. Fill the template from the commits and diff:
    - Tick any checkboxes that match the change type(s). Multiple may apply.
-   - Fill prose sections (what/why, summary, description, etc.) with a short paragraph or 2-3 bullets grounded in the actual changes.
+   - Fill prose sections (what/why, summary, description, etc.) with a one-sentence summary followed by one bullet per logical change, grounded in the actual changes. 
+   - Write like a colleague summarising the change, not generated docs:
+     - Say what and why. The diff already shows how.
+     - One clause per bullet, ~15 words. No parenthetical lists of settings or attributes.
+     - Name the effect, not the machinery. No packages, classes, or files unless the bullet is meaningless without them.
+     - Backticks are rare: at most one per bullet, only for an env var, config key, or flag the reader will grep.
+     - Reviewer notes only hold what changes the review: a gating flag, a migration, a deploy order. Cut known limitations.
+     - Never reference the coding session: plan files, phases, steps, or task names exist only in this conversation, not in the diff, and mean nothing to the reviewer.
    - Insert the issue reference: `Fixes #<n>` for GitHub or `Closes #<n>` for GitLab (both auto-close on merge). Leave empty if the user said "none".
    - Leave optional or context sections blank unless reviewers genuinely need the info (migrations, deploy order, feature flags, user-visible impact).
 
